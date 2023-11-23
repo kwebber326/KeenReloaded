@@ -1,0 +1,8 @@
+3000|3000
+CommanderKeen|64|64|RIGHT
+HorizontalExtendedBiomeTile|0|0|KEEN5_BLACK|CEILING|50
+HorizontalExtendedBiomeTile|0|2950|KEEN5_BLACK|CEILING|50
+VerticalExtendedBiomeTile|0|0|KEEN5_BLACK|WALL_RIGHT_EDGE|50
+VerticalExtendedBiomeTile|2950|0|KEEN5_BLACK|WALL_LEFT_EDGE|50
+HorizontalExtendedBiomeTile|0|650|KEEN5_BLACK|FLOOR_MIDDLE|15
+VerticalExtendedBiomeTile|650|0|KEEN5_BLACK|WALL_LEFT_EDGE|11

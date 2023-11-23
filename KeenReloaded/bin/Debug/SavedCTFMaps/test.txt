@@ -1,0 +1,12 @@
+1000|1000
+CommanderKeen|100|800|RIGHT
+ExtraLife|100|800|KEEN5_KEG_O_VITALIN
+PointItem|100|800|KEEN6_PIZZA_SLICE
+NeuralStunnerAmmo|100|800|1000
+VerticalExtendedBiomeTile|2|0|KEEN5_RED|WALL_RIGHT_EDGE|35
+HorizontalExtendedBiomeTile|0|900|KEEN5_RED|FLOOR_MIDDLE|3
+HorizontalExtendedBiomeTile|128|770|KEEN5_RED|FLOOR_MIDDLE|10
+RemovablePlatform|128|900|KEEN5_RED|false|20|3f28fb9e-3301-4737-955e-5f82171f28e0
+ToggleSwitch|100|890|KEEN5_1|false|[3f28fb9e-3301-4737-955e-5f82171f28e0]
+EnemyFlag|400|870|10
+BackgroundSprite|0|0|2500|2000|keen5_background_security_center_gray.png|0|false

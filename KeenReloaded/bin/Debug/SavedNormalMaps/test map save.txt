@@ -1,0 +1,14 @@
+1500|1500
+CommanderKeen|206|245|RIGHT
+SMGNeuralStunnerAmmo|417|335|30
+ShotgunNeuralStunnerAmmo|300|333|50
+RPGNeuralStunnerAmmo|384|258|10
+RailgunNeuralStunnerAmmo|301|257|5
+NeuralStunnerAmmo|348|188|5
+BoobusBombLauncherAmmo|293|186|10
+BFGAmmo|400|186|10
+Keen5LargePipePlatform|202|388|346|80
+Flag|114|150|YELLOW|1000|1|0
+Flag|114|150|GREEN|1000|1|0
+Flag|114|150|BLUE|1000|1|0
+Flag|114|150|RED|1000|1|0

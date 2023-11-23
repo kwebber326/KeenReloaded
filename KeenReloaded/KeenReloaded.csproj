@@ -1,0 +1,745 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A76FF24A-E3C8-4B60-B079-E222999A036B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KeenReloaded</RootNamespace>
+    <AssemblyName>KeenReloaded</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="KeenReloadedEventArgs\PropertyValueControlValueChangedEventArgs.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperClasses\HighScore.cs" />
+    <Compile Include="HelperClasses\ImageToObjectCreationFactory.cs" />
+    <Compile Include="HelperClasses\KeenReloadedUtility.cs" />
+    <Compile Include="HelperClasses\TypeConstructorValues.cs" />
+    <Compile Include="HighScoreBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HighScoreBoard.Designer.cs">
+      <DependentUpon>HighScoreBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapMaker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapMaker.Designer.cs">
+      <DependentUpon>MapMaker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\FlagColorScoreKeeper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\FlagColorScoreKeeper.Designer.cs">
+      <DependentUpon>FlagColorScoreKeeper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FlagInventoryBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\FlagInventoryBoard.Designer.cs">
+      <DependentUpon>FlagInventoryBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\KeenGame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\KeenGame.Designer.cs">
+      <DependentUpon>KeenGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\KeenOptionButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\KeenOptionButton.Designer.cs">
+      <DependentUpon>KeenOptionButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\KeenReloadedDialogWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\KeenReloadedDialogWindow.Designer.cs">
+      <DependentUpon>KeenReloadedDialogWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\KeenReloadedItemPic.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\KeenReloadedItemPic.Designer.cs">
+      <DependentUpon>KeenReloadedItemPic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\KeenReloadedTextInputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\KeenReloadedTextInputDialog.Designer.cs">
+      <DependentUpon>KeenReloadedTextInputDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\KeenReloadedYesNoDialogWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\KeenReloadedYesNoDialogWindow.Designer.cs">
+      <DependentUpon>KeenReloadedYesNoDialogWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\KeyCardInventoryBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\KeyCardInventoryBoard.Designer.cs">
+      <DependentUpon>KeyCardInventoryBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\KeyInventoryBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\KeyInventoryBoard.Designer.cs">
+      <DependentUpon>KeyInventoryBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LifeletCounter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\LifeletCounter.Designer.cs">
+      <DependentUpon>LifeletCounter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LoadingAnimation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\LoadingAnimation.Designer.cs">
+      <DependentUpon>LoadingAnimation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LoadMapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\LoadMapForm.Designer.cs">
+      <DependentUpon>LoadMapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MenuOption.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\MenuOption.Designer.cs">
+      <DependentUpon>MenuOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ObjectMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ObjectMenu.Designer.cs">
+      <DependentUpon>ObjectMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PropertyValueControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PropertyValueControl.Designer.cs">
+      <DependentUpon>PropertyValueControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ScoreBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ScoreBoard.Designer.cs">
+      <DependentUpon>ScoreBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SelectableImageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\ShieldInventoryItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ShieldInventoryItem.Designer.cs">
+      <DependentUpon>ShieldInventoryItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SpriteSheet\UserControlSpriteSheet.cs" />
+    <Compile Include="UserControls\WeaponInventoryBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\WeaponInventoryBoard.Designer.cs">
+      <DependentUpon>WeaponInventoryBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WeaponInventoryItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\WeaponInventoryItem.Designer.cs">
+      <DependentUpon>WeaponInventoryItem.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HighScoreBoard.resx">
+      <DependentUpon>HighScoreBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapMaker.resx">
+      <DependentUpon>MapMaker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControls\FlagColorScoreKeeper.resx">
+      <DependentUpon>FlagColorScoreKeeper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\FlagInventoryBoard.resx">
+      <DependentUpon>FlagInventoryBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\KeenGame.resx">
+      <DependentUpon>KeenGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\KeenOptionButton.resx">
+      <DependentUpon>KeenOptionButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\KeenReloadedDialogWindow.resx">
+      <DependentUpon>KeenReloadedDialogWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\KeenReloadedItemPic.resx">
+      <DependentUpon>KeenReloadedItemPic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\KeenReloadedYesNoDialogWindow.resx">
+      <DependentUpon>KeenReloadedYesNoDialogWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\KeyCardInventoryBoard.resx">
+      <DependentUpon>KeyCardInventoryBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\KeyInventoryBoard.resx">
+      <DependentUpon>KeyInventoryBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\LifeletCounter.resx">
+      <DependentUpon>LifeletCounter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\LoadingAnimation.resx">
+      <DependentUpon>LoadingAnimation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\LoadMapForm.resx">
+      <DependentUpon>LoadMapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MenuOption.resx">
+      <DependentUpon>MenuOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ObjectMenu.resx">
+      <DependentUpon>ObjectMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PropertyValueControl.resx">
+      <DependentUpon>PropertyValueControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ScoreBoard.resx">
+      <DependentUpon>ScoreBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ShieldInventoryItem.resx">
+      <DependentUpon>ShieldInventoryItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\WeaponInventoryBoard.resx">
+      <DependentUpon>WeaponInventoryBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\WeaponInventoryItem.resx">
+      <DependentUpon>WeaponInventoryItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KeenReloaded.Framework\KeenReloaded.Framework.csproj">
+      <Project>{6E310745-2835-4FD8-8D11-035D14DBB38F}</Project>
+      <Name>KeenReloaded.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scoreboard_blank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scoreboard_default_LED.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scoreboard_LED_eight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scoreboard_LED_five.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scoreboard_LED_four.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scoreboard_LED_nine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scoreboard_LED_one.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scoreboard_LED_seven.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scoreboard_LED_six.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scoreboard_LED_three.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scoreboard_LED_two.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scoreboard_LED_zero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\neural_stunner_railgun1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\neural_stunner_rocket_launcher1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\neural_stunner_shotgun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\neural_stunner_smg_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\neural_stunner1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KeyInventoryTemplate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventory_blue_gem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventory_green_gem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventory_yellow_gem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red_gem_inventory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keen_dreams_boobus_bomb2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\life_drop_board.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keen_shoot_right_standing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keen_message_window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keen_message_window_option_selected1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keen_message_window_option_selected2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_card_acquired.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_card_not_acquired.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\high-score-panel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\j.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\J_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\k.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\K_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\O_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\q.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\U_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\W_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Y_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Z_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_and_sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_at_symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_backslash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_colon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_comma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_dash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_dollar_sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_exclamation_point.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_hashtag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_left_brace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_left_bracket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_left_parenthesis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_percent_sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_period.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_right_brace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_right_bracket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_right_parenthesis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_semicolon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_double_quote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_equals.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_forward_slash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_greater_than_caret.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_left_single_quote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_less_than_caret.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_pipe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_question_mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_right_single_quote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_tilde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sc_underscore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shield_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\princess_indi_shoot_right_standing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baby_louie_shoot_right_standing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yorp_shoot_right_standing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keen_dreams_shoot_right_standing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mm_shoot_right_standing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oracle_elder_shoot_right_standing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\council_page_shoot_right_standing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BFG1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snake_gun1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

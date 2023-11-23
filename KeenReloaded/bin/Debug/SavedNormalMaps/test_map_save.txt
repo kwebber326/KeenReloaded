@@ -1,0 +1,11 @@
+1500|1500
+CommanderKeen|84|139|RIGHT
+Keen5LargePipePlatform|67|270|346|80
+RailgunNeuralStunnerAmmo|320|152|5
+SMGNeuralStunnerAmmo|307|188|30
+NeuralStunnerAmmo|248|108|5
+BoobusBombLauncherAmmo|242|144|10
+BFGAmmo|232|195|1
+RPGNeuralStunnerAmmo|153|97|10
+ShotgunNeuralStunnerAmmo|160|195|50
+SnakeGunAmmo|160|151|10

@@ -1,0 +1,12 @@
+1000|1000
+CommanderKeen|300|200|RIGHT
+HorizontalExtendedBiomeTile|0|16|KEEN6_DOME|CEILING|16
+HorizontalExtendedBiomeTile|0|400|KEEN6_DOME|FLOOR_MIDDLE|15
+VerticalExtendedBiomeTile|0|0|KEEN6_DOME|WALL_RIGHT_EDGE|20
+HorizontalExtendedBiomeTile|0|900|KEEN6_DOME|FLOOR_MIDDLE|21
+VerticalExtendedBiomeTile|1000|0|KEEN6_DOME|WALL_LEFT_EDGE|20
+EnemySpawner|600|832|30|50|200000|[Shelley,ShikadiMine,Shikadi,Bounder,Lick,PoisonSlug,Wormmouth,Sparky,Shockshund,Babobba,Shikadi,Mimrock,Bloog,Blooguard,Blooglet,SkyPest,DiagonalSlicestar,LittleAmpton,Nospike,Fleex,GnosticeneAncient]
+BiomeChanger|600|500|10|200|300|50
+NeuralStunnerAmmo|64|300|50
+Pole|762|368|MANHOLE|KEEN6_DOME|14
+RandomWeaponGenerator|300|308|20000
